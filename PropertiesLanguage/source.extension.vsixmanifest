@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+  <Metadata>
+    <Identity Id="PropertiesLanguage.Claudiu Avram.9787c7ec-f251-4975-8147-6ec80574e50f" Version="0.9.0" Language="en-US" Publisher="Claudiu Avram" />
+    <DisplayName>PropertiesLanguage</DisplayName>
+    <Description xml:space="preserve">Properties language's syntax highlighting.
+Source code can be found at: https://github.com/clausavram/PropertiesLanguage</Description>
+    <License>README.txt</License>
+    <Icon>Resources\Properties.ico</Icon>
+    <PreviewImage>Resources\Properties.ico</PreviewImage>
+  </Metadata>
+  <Installation>
+    <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[14.0]" />
+  </Installation>
+  <Dependencies>
+    <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.5,)" />
+  </Dependencies>
+  <Assets>
+    <Asset Type="Microsoft.VisualStudio.MefComponent" d:Source="Project" d:ProjectName="%CurrentProject%" Path="|%CurrentProject%|" />
+  </Assets>
+</PackageManifest>

@@ -1,0 +1,3 @@
+this is a simple plain text file.
+key = value # should not be highlighted
+bla bla blabla

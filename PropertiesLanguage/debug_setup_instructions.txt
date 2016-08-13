@@ -1,0 +1,10 @@
+﻿Right after cloning the project, if trying to debug the application, the following error occurs:
+
+ | Visual Studio cannot start debugging because the debug target '...\PropertiesLanguage\bin\Debug\PropertiesLanguage.dll' is missing.
+ | Please build the project and retry, or set the OutputPath and AssemblyName properties appropriately to point at the correct location for the target assembly.
+
+what you need to do is change the project Debug settings and instruct it to start up a new experimental Visual Studio insance:
+ 1. Start Action -> Start external program:
+    "C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\devenv.exe" (or wherever it's located)
+ 2. Start Options -> Command line arguments:
+    "/rootsuffix Exp"
