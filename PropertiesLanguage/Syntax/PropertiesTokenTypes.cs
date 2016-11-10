@@ -1,5 +1,5 @@
 ﻿namespace PropertiesLanguage.Syntax {
     public enum PropertiesTokenTypes {
-        PropertiesKey, PropertiesValue, PropertiesComment
+        PropertiesKey, PropertiesValue, PropertiesComment, PropertiesSeparator
     }
 }
