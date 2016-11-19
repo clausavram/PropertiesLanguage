@@ -19,6 +19,10 @@ namespace PropertiesLanguage.Syntax.Classification {
         [Name("PropertiesCommentTypeDefinition")]
         internal static ClassificationTypeDefinition PropertiesCommentDefinition;
 
+        [Export(typeof(ClassificationTypeDefinition))]
+        [Name("PropertiesSeparatorTypeDefinition")]
+        internal static ClassificationTypeDefinition PropertiesSeparatorDefinition;
+
         #endregion
     }
 }

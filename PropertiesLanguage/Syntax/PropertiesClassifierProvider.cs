@@ -9,7 +9,7 @@ namespace PropertiesLanguage.Syntax {
     [Export(typeof(ITaggerProvider))]
     [ContentType("PropertiesContentType")]
     [TagType(typeof(ClassificationTag))]
-    internal sealed class PropertiesClassifierProvider : ITaggerProvider {
+    internal class PropertiesClassifierProvider : ITaggerProvider {
 
         #pragma warning disable 0649
         [Export]

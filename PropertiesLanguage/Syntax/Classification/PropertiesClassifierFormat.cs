@@ -12,7 +12,7 @@ namespace PropertiesLanguage.Syntax.Classification {
     [ClassificationType(ClassificationTypeNames = "PropertiesKeyTypeDefinition")]
     [Name("PropertiesKeyFormat")]
     [Order(Before = Priority.Default)]
-    internal sealed class PropertiesKey : ClassificationFormatDefinition {
+    internal class PropertiesKey : ClassificationFormatDefinition {
         public PropertiesKey() {
             DisplayName = "Properties Key";
             ForegroundColor = Color.FromRgb(86, 156, 214);
@@ -26,7 +26,7 @@ namespace PropertiesLanguage.Syntax.Classification {
     [ClassificationType(ClassificationTypeNames = "PropertiesValueTypeDefinition")]
     [Name("PropertiesValueFormat")]
     [Order(Before = Priority.Default)]
-    internal sealed class PropertiesValue : ClassificationFormatDefinition {
+    internal class PropertiesValue : ClassificationFormatDefinition {
         public PropertiesValue() {
             DisplayName = "Properties Value";
             ForegroundColor = Color.FromRgb(214, 157, 113);
@@ -40,10 +40,26 @@ namespace PropertiesLanguage.Syntax.Classification {
     [ClassificationType(ClassificationTypeNames = "PropertiesCommentTypeDefinition")]
     [Name("PropertiesCommentFormat")]
     [Order(Before = Priority.Default)]
-    internal sealed class PropertiesComment : ClassificationFormatDefinition {
+    internal class PropertiesComment : ClassificationFormatDefinition {
         public PropertiesComment() {
             DisplayName = "Properties Comment";
             ForegroundColor = Colors.Gray;
+        }
+    }
+
+    /// <summary>
+    /// Defines the editor format for the PropertiesComment classification type.
+    /// </summary>
+    [Export(typeof(EditorFormatDefinition))]
+    [ClassificationType(ClassificationTypeNames = "PropertiesSeparatorTypeDefinition")]
+    [Name("PropertiesSeparatorFormat")]
+    [Order(Before = Priority.Default)]
+    internal class PropertiesSeparator : ClassificationFormatDefinition
+    {
+        public PropertiesSeparator()
+        {
+            DisplayName = "Properties Separator";
+            ForegroundColor = Colors.LightGray;
         }
     }
     #endregion //Format definition

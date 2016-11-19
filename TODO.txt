@@ -1,0 +1,16 @@
+1. change comment definition:
+  - comments can appear only if the first non-whitespace character on a line
+    is '#' (hash)
+  - else, '#' is just a regular character, part of the key or value
+2. add line continuation:
+  - if a line's last character is '\' (backslash), right before the newline,
+    the next line is parsed as being concatenated to the current line
+  - a line containig no '=' and ending in a '\' will make the next line begin
+    with a key
+  - if a line starting with '#' ends in '\', the '#' will not have any special
+    meaning
+  - if the '\' follows a line's value, the next line will be a value, even if
+    it starts with '#'
+  - underline warning for line trailing whitespace after '\'
+
+# for testing purposes, use IntelliJ IDEA's highlighting as a reference
