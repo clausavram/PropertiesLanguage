@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
   <Metadata>
-    <Identity Id="PropertiesLanguage.Claudiu Avram.9787c7ec-f251-4975-8147-6ec80574e50f" Version="0.9.0" Language="en-US" Publisher="Claudiu Avram" />
+    <Identity Id="PropertiesLanguage.Claudiu Avram.9787c7ec-f251-4975-8147-6ec80574e50f" Version="1.0.0" Language="en-US" Publisher="Claudiu Avram" />
     <DisplayName>PropertiesLanguage</DisplayName>
     <Description xml:space="preserve">Properties language's syntax highlighting.
 Source code can be found at: https://github.com/clausavram/PropertiesLanguage</Description>
